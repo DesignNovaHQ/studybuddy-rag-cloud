@@ -20,7 +20,7 @@ from pypdf import PdfReader
 
 # ----------------------------- CONFIG ---------------------------------
 EMBED_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-LLM_CHOICES = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]
+LLM_CHOICES = ["openai/gpt-oss-20b", "openai/gpt-oss-120b"]
 CHUNK_SIZE = 800
 CHUNK_OVERLAP = 150
 MAX_PAGES_PER_INDEX = 150  # keeps memory low on free hosting
