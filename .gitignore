@@ -1,0 +1,9 @@
+# never commit secrets, books or local files
+.streamlit/secrets.toml
+*.pdf
+venv/
+.venv/
+__pycache__/
+*.pyc
+chroma_db/
+.env
