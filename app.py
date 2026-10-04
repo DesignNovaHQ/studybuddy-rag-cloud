@@ -21,10 +21,10 @@ from pypdf import PdfReader
 # ----------------------------- CONFIG ---------------------------------
 EMBED_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 LLM_CHOICES = ["openai/gpt-oss-20b", "openai/gpt-oss-120b"]
-CHUNK_SIZE = 800
-CHUNK_OVERLAP = 150
-MAX_PAGES_PER_INDEX = 150  # keeps memory low on free hosting
-BATCH = 32
+CHUNK_SIZE = 1500
+CHUNK_OVERLAP = 200
+MAX_PAGES_PER_INDEX = 2000
+BATCH = 16
 
 st.set_page_config(page_title="StudyBuddy RAG", page_icon="📚", layout="wide")
 
